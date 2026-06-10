@@ -25,10 +25,12 @@ function renderTeil2(items) {
     <div class="aufgabe-card karte-a">
       <div class="t2-number">1</div>
       <p class="t2-text">${a.text}</p>
+      <span class="serial-number">#${a.id}</span>
     </div>
     <div class="aufgabe-card karte-b">
       <div class="t2-number">2</div>
       <p class="t2-text">${b.text}</p>
+      <span class="serial-number">#${b.id}</span>
     </div>
   `;
 }
@@ -52,6 +54,7 @@ function renderTeil3(item) {
         `).join('')}
         <li class="stich-offen">…?</li>
       </ul>
+      <span class="serial-number">#${item.id}</span>
     </div>
   `;
 }

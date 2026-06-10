@@ -205,11 +205,21 @@ header h1 {
 
 /* Individual card */
 .aufgabe-card {
+  position: relative;
   background: var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.4rem 1.5rem;
+  padding: 1.4rem 1.5rem 2rem;
   border-top: 4px solid var(--primary);
+}
+
+.serial-number {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.8rem;
+  font-size: 0.7rem;
+  color: var(--border);
+  font-variant-numeric: tabular-nums;
 }
 
 .aufgabe-card.karte-a { border-top-color: #2c5f8a; background: var(--card-a); }
