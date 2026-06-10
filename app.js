@@ -118,17 +118,12 @@ document.getElementById('generateBtn').addEventListener('click', generate);
 const infoBtn = document.getElementById('infoBtn');
 const infoPanel = document.getElementById('infoPanel');
 
-infoBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  infoPanel.classList.toggle('hidden');
-  updateCountDisplay();
-});
+function closePanel() { infoPanel.classList.add('hidden'); }
+function openPanel() { infoPanel.classList.remove('hidden'); updateCountDisplay(); }
 
-document.addEventListener('click', (e) => {
-  if (!infoPanel.contains(e.target)) {
-    infoPanel.classList.add('hidden');
-  }
-});
+infoBtn.addEventListener('click', (e) => { e.stopPropagation(); openPanel(); });
+document.getElementById('infoPanelClose').addEventListener('click', closePanel);
+infoPanel.addEventListener('click', (e) => { if (e.target === infoPanel) closePanel(); });
 
 // Feedback
 document.getElementById('feedbackSubmit').addEventListener('click', () => {

@@ -36,7 +36,6 @@ body {
 
 /* Header */
 header {
-  position: relative;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -54,14 +53,16 @@ header h1 {
 }
 
 .info-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: none;
-  border: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   cursor: pointer;
   color: var(--muted);
-  padding: 0.25rem;
+  padding: 0.4rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -74,39 +75,71 @@ header h1 {
   background: var(--accent);
 }
 
-/* Info panel */
-.info-panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1rem 1.1rem;
-  margin-bottom: 1.5rem;
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
 }
 
-.info-panel.hidden { display: none; }
+.modal-overlay.hidden { display: none; }
+
+.modal-card {
+  background: var(--surface);
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  max-width: 540px;
+  padding: 1.5rem 1.5rem 2.5rem;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s;
+}
+
+.modal-close:hover { background: var(--border); color: var(--text); }
 
 .info-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 2rem;
 }
 
 .info-label {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 
 .info-count {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
+  line-height: 1;
 }
 
 .info-divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 0.85rem 0;
+  margin: 1rem 0;
 }
 
 .info-feedback-label {
@@ -132,19 +165,17 @@ header h1 {
   transition: border-color 0.15s;
 }
 
-.info-textarea:focus {
-  border-color: var(--primary);
-}
+.info-textarea:focus { border-color: var(--primary); }
 
 .info-submit {
   margin-top: 0.6rem;
   width: 100%;
-  padding: 0.55rem;
+  padding: 0.7rem;
   background: var(--primary);
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.15s;
