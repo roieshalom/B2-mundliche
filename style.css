@@ -405,7 +405,7 @@ header h1 {
   bottom: 0.6rem;
   right: 0.8rem;
   font-size: 0.7rem;
-  color: var(--border);
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 
