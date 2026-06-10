@@ -223,13 +223,33 @@ header h1 {
 .aufgabe-card.karte-b { border-top-color: #5a3e8a; background: var(--card-b); }
 .aufgabe-card.teil3-card { border-top-color: #5a3e8a; }
 
+/* Teil 2 cards */
+.t2-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.karte-b .t2-number {
+  color: #d5c8f0;
+}
+
+.t2-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Teil 3 cards */
 .card-rolle {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--muted);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-situation {
@@ -239,79 +259,60 @@ header h1 {
   margin-bottom: 1rem;
 }
 
-.card-punkte-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-}
-
-.card-punkte {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.card-punkte li {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  padding-left: 1.1rem;
-  position: relative;
-  color: var(--text);
-}
-
-.card-punkte li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  font-weight: 700;
-}
-
-.karte-b .card-punkte li::before {
-  color: #5a3e8a;
-}
-
-/* Teil 3 specific */
 .aufgabe-label {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: var(--muted);
-  margin: 1rem 0 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .aufgabe-text {
   font-size: 0.95rem;
-  font-weight: 600;
   line-height: 1.5;
   color: var(--text);
   margin-bottom: 1rem;
 }
 
-.impulse-list {
+.card-punkte-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.stichpunkte-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
 }
 
-.impulse-list li {
-  font-size: 0.9rem;
+.stichpunkte-list li {
+  font-size: 0.95rem;
   line-height: 1.5;
-  padding-left: 1.4rem;
-  position: relative;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
   color: var(--text);
 }
 
-.impulse-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0.3rem;
-  color: #5a3e8a;
-  font-size: 1.1rem;
+.stichpunkte-list li:last-child {
+  border-bottom: none;
+}
+
+.stich-thema {
+  font-weight: 700;
+}
+
+.stich-fragen {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.stich-offen {
+  color: var(--muted) !important;
+  font-weight: 700;
 }
