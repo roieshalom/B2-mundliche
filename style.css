@@ -197,6 +197,10 @@ header h1 {
   gap: 0.75rem;
 }
 
+.stat-box-full {
+  grid-column: 1 / -1;
+}
+
 .stat-box {
   background: var(--bg);
   border-radius: 10px;

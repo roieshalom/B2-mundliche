@@ -4,38 +4,11 @@ let generateCount = parseInt(localStorage.getItem('generateCount') || '0', 10);
 let countTeil2 = parseInt(localStorage.getItem('countTeil2') || '0', 10);
 let countTeil3 = parseInt(localStorage.getItem('countTeil3') || '0', 10);
 
-function calcStreak() {
-  const days = JSON.parse(localStorage.getItem('practiceDays') || '[]');
-  if (!days.length) return 0;
-  const today = new Date().toISOString().slice(0, 10);
-  const sorted = [...new Set(days)].sort().reverse();
-  let streak = 0;
-  let expected = today;
-  for (const d of sorted) {
-    if (d === expected) {
-      streak++;
-      const dt = new Date(expected);
-      dt.setDate(dt.getDate() - 1);
-      expected = dt.toISOString().slice(0, 10);
-    } else break;
-  }
-  return streak;
-}
-
-function recordToday() {
-  const today = new Date().toISOString().slice(0, 10);
-  const days = JSON.parse(localStorage.getItem('practiceDays') || '[]');
-  if (!days.includes(today)) {
-    days.push(today);
-    localStorage.setItem('practiceDays', JSON.stringify(days));
-  }
-}
 
 function updateStatsDisplay() {
   document.getElementById('statTotal').textContent = generateCount;
   document.getElementById('statTeil2').textContent = countTeil2;
   document.getElementById('statTeil3').textContent = countTeil3;
-  document.getElementById('statStreak').textContent = calcStreak();
   const last = localStorage.getItem('lastPracticed');
   document.getElementById('statLast').textContent = last
     ? 'Zuletzt geübt: ' + new Date(last).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
@@ -131,7 +104,6 @@ function generate() {
     if (selectedTeil === 'teil2') { countTeil2++; localStorage.setItem('countTeil2', countTeil2); }
     else { countTeil3++; localStorage.setItem('countTeil3', countTeil3); }
     localStorage.setItem('lastPracticed', new Date().toISOString());
-    recordToday();
 
     loading.classList.add('hidden');
     result.classList.remove('hidden');
