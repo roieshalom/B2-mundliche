@@ -1,0 +1,181 @@
+{
+  "teil2": [
+    {
+      "id": "t2-1",
+      "thema": "Homeoffice-Regelung",
+      "karteA": {
+        "rolle": "Kollegin / Kollege A",
+        "situation": "Sie arbeiten seit einem Jahr vollständig im Homeoffice und sind sehr zufrieden damit. Ihr Unternehmen plant nun, alle Mitarbeiter wieder ins Büro zu holen.",
+        "punkte": [
+          "Sprechen Sie über Ihre positiven Erfahrungen mit dem Homeoffice.",
+          "Erklären Sie, warum Sie gegen die Rückkehr ins Büro sind.",
+          "Schlagen Sie einen Kompromiss vor."
+        ]
+      },
+      "karteB": {
+        "rolle": "Kollegin / Kollege B",
+        "situation": "Sie arbeiten lieber im Büro und finden, dass die Teamarbeit im Homeoffice leidet. Sie begrüßen die Entscheidung der Unternehmensleitung.",
+        "punkte": [
+          "Nennen Sie Vorteile der Arbeit im Büro.",
+          "Erklären Sie, welche Probleme das Homeoffice für das Team verursacht hat.",
+          "Reagieren Sie auf den Vorschlag Ihrer Kollegin / Ihres Kollegen."
+        ]
+      }
+    },
+    {
+      "id": "t2-2",
+      "thema": "Überstunden und Work-Life-Balance",
+      "karteA": {
+        "rolle": "Kollegin / Kollege A",
+        "situation": "Sie bemerken, dass eine Kollegin / ein Kollege regelmäßig sehr lange arbeitet und erschöpft wirkt. Sie machen sich Sorgen um ihre/seine Gesundheit.",
+        "punkte": [
+          "Sprechen Sie die Situation an und zeigen Sie Verständnis.",
+          "Fragen Sie nach den Gründen für die vielen Überstunden.",
+          "Machen Sie konkrete Vorschläge, wie die Situation verbessert werden könnte."
+        ]
+      },
+      "karteB": {
+        "rolle": "Kollegin / Kollege B",
+        "situation": "Sie arbeiten seit Wochen viele Überstunden, weil ein wichtiges Projekt läuft. Sie fühlen sich unter Druck gesetzt und wissen nicht, wie Sie das Gespräch mit Ihrer Vorgesetzten / Ihrem Vorgesetzten angehen sollen.",
+        "punkte": [
+          "Erklären Sie die Situation und Ihre Belastung.",
+          "Nehmen Sie die Hilfe Ihrer Kollegin / Ihres Kollegen an oder lehnen Sie sie ab.",
+          "Besprechen Sie gemeinsam mögliche Lösungen."
+        ]
+      }
+    },
+    {
+      "id": "t2-3",
+      "thema": "Neues Bürokonzept",
+      "karteA": {
+        "rolle": "Kollegin / Kollege A",
+        "situation": "Die Firma plant, feste Schreibtische abzuschaffen und auf Open Space mit Shared Desks umzustellen. Sie sind dagegen, weil Sie einen festen Arbeitsplatz bevorzugen.",
+        "punkte": [
+          "Erklären Sie, warum feste Schreibtische wichtig für Sie sind.",
+          "Beschreiben Sie mögliche Nachteile des neuen Konzepts.",
+          "Fragen Sie nach der Meinung Ihrer Kollegin / Ihres Kollegen."
+        ]
+      },
+      "karteB": {
+        "rolle": "Kollegin / Kollege B",
+        "situation": "Sie finden das neue Open-Space-Konzept interessant und modern. Sie glauben, dass es die Kommunikation im Team verbessern wird.",
+        "punkte": [
+          "Nennen Sie Vorteile des Open-Space-Konzepts.",
+          "Gehen Sie auf die Bedenken Ihrer Kollegin / Ihres Kollegen ein.",
+          "Schlagen Sie eine Probezeit vor."
+        ]
+      }
+    },
+    {
+      "id": "t2-4",
+      "thema": "Weiterbildung",
+      "karteA": {
+        "rolle": "Kollegin / Kollege A",
+        "situation": "Sie möchten an einer teuren Weiterbildungsmaßnahme teilnehmen und hoffen, dass die Firma die Kosten übernimmt. Sie bitten eine Kollegin / einen Kollegen um Rat, wie Sie das Gespräch mit der Vorgesetzten führen sollen.",
+        "punkte": [
+          "Beschreiben Sie die Weiterbildung und ihren Nutzen für die Firma.",
+          "Fragen Sie nach Erfahrungen Ihrer Kollegin / Ihres Kollegen.",
+          "Überlegen Sie gemeinsam Argumente für das Gespräch."
+        ]
+      },
+      "karteB": {
+        "rolle": "Kollegin / Kollege B",
+        "situation": "Sie haben selbst eine Weiterbildung beantragt und dabei positive Erfahrungen gemacht. Sie kennen die Vorgesetzte / den Vorgesetzten gut und wissen, worauf sie/er Wert legt.",
+        "punkte": [
+          "Berichten Sie von Ihren eigenen Erfahrungen.",
+          "Geben Sie konkrete Tipps für das Gespräch.",
+          "Warnen Sie ggf. vor möglichen Problemen."
+        ]
+      }
+    },
+    {
+      "id": "t2-5",
+      "thema": "Teamkonflikt lösen",
+      "karteA": {
+        "rolle": "Kollegin / Kollege A",
+        "situation": "Es gibt Spannungen in Ihrem Team, weil zwei Kolleginnen / Kollegen sich nicht gut verstehen und das die Arbeit belastet. Als informelle Führungsperson im Team fühlen Sie sich verantwortlich.",
+        "punkte": [
+          "Beschreiben Sie das Problem und seine Auswirkungen auf das Team.",
+          "Schlagen Sie vor, wie Sie gemeinsam vorgehen könnten.",
+          "Fragen Sie nach der Einschätzung Ihrer Kollegin / Ihres Kollegen."
+        ]
+      },
+      "karteB": {
+        "rolle": "Kollegin / Kollege B",
+        "situation": "Sie beobachten den Konflikt ebenfalls, möchten sich aber nicht einmischen. Sie denken, dass die Vorgesetzte / der Vorgesetzte eingreifen sollte.",
+        "punkte": [
+          "Erklären Sie Ihre Zurückhaltung.",
+          "Begründen Sie, warum die Führungskraft eingreifen sollte.",
+          "Reagieren Sie auf den Vorschlag Ihrer Kollegin / Ihres Kollegen."
+        ]
+      }
+    }
+  ],
+  "teil3": [
+    {
+      "id": "t3-1",
+      "thema": "Fachkräftemangel im Unternehmen",
+      "situation": "Ein mittelgroßes Unternehmen leidet stark unter Fachkräftemangel. Offene Stellen bleiben monatelang unbesetzt, die vorhandenen Mitarbeiterinnen und Mitarbeiter sind überlastet. Die Geschäftsführung bittet Sie, Lösungen zu erarbeiten.",
+      "aufgabe": "Diskutieren Sie mögliche Maßnahmen und einigen Sie sich auf die zwei wirksamsten Lösungsansätze.",
+      "impulse": [
+        "Ausbildung eigener Fachkräfte (Ausbildungsplätze, duale Studiengänge)",
+        "Gezielte Anwerbung aus dem Ausland",
+        "Verbesserung der Arbeitsbedingungen und des Gehalts",
+        "Automatisierung und Digitalisierung von Prozessen",
+        "Zusammenarbeit mit Universitäten und Hochschulen"
+      ]
+    },
+    {
+      "id": "t3-2",
+      "thema": "Nachhaltigkeit im Betrieb",
+      "situation": "Ein Unternehmen möchte seinen CO₂-Fußabdruck bis 2030 um 50% reduzieren. Die Mitarbeiterinnen und Mitarbeiter sind unterschiedlich motiviert. Das Budget für Maßnahmen ist begrenzt.",
+      "aufgabe": "Diskutieren Sie, welche Maßnahmen am sinnvollsten sind, und einigen Sie sich auf drei konkrete Schritte.",
+      "impulse": [
+        "Umstieg auf erneuerbare Energien im Betrieb",
+        "Förderung von Fahrrad und ÖPNV für den Arbeitsweg",
+        "Reduktion von Dienstreisen durch mehr Videokonferenzen",
+        "Papierloses Büro und digitale Prozesse",
+        "Nachhaltige Beschaffung und regionale Lieferanten"
+      ]
+    },
+    {
+      "id": "t3-3",
+      "thema": "Digitalisierung des Kundenservice",
+      "situation": "Ein Unternehmen möchte seinen Kundenservice digitalisieren und plant, einen Chatbot einzuführen. Ältere Kundinnen und Kunden sind skeptisch, jüngere begrüßen die Änderung. Einige Mitarbeiterinnen und Mitarbeiter fürchten um ihre Stellen.",
+      "aufgabe": "Diskutieren Sie die Vor- und Nachteile und entwickeln Sie einen Lösungsplan, der alle Gruppen berücksichtigt.",
+      "impulse": [
+        "Stufenweise Einführung mit parallelem Angebot (Chatbot + Telefon)",
+        "Schulungen für ältere Kundinnen und Kunden",
+        "Umschulung der betroffenen Mitarbeiterinnen und Mitarbeiter",
+        "Feedback-System zur Verbesserung des Chatbots",
+        "Klare Kommunikation über die Ziele der Digitalisierung"
+      ]
+    },
+    {
+      "id": "t3-4",
+      "thema": "Gesundheitsförderung am Arbeitsplatz",
+      "situation": "In einem Unternehmen steigen Krankheitstage und Burnout-Fälle. Die Unternehmensleitung möchte gezielt in die Gesundheit der Mitarbeitenden investieren, weiß aber nicht, welche Maßnahmen am wirksamsten sind.",
+      "aufgabe": "Diskutieren Sie mögliche Maßnahmen zur Gesundheitsförderung und priorisieren Sie die drei wichtigsten.",
+      "impulse": [
+        "Flexible Arbeitszeiten und mehr Homeoffice-Möglichkeiten",
+        "Angebote zur psychischen Gesundheit (Coaching, Beratung)",
+        "Sport- und Bewegungsangebote (Firmensport, Stehschreibtische)",
+        "Bessere Work-Life-Balance durch klare Regelungen zu Erreichbarkeit",
+        "Betriebliches Eingliederungsmanagement nach langer Krankheit"
+      ]
+    },
+    {
+      "id": "t3-5",
+      "thema": "Integration neuer Mitarbeitender",
+      "situation": "Ein schnell wachsendes Unternehmen hat in kurzer Zeit viele neue Mitarbeiterinnen und Mitarbeiter eingestellt. Das Onboarding ist unstrukturiert, viele Neue fühlen sich verloren, und die Fluktuation in der Probezeit ist hoch.",
+      "aufgabe": "Diskutieren Sie, wie ein strukturiertes Onboarding-Programm aussehen könnte, und einigen Sie sich auf die wichtigsten Elemente.",
+      "impulse": [
+        "Mentoring-Programm (erfahrene Kollegin / erfahrener Kollege als Pate/Patin)",
+        "Strukturierter Einarbeitungsplan für die ersten 90 Tage",
+        "Regelmäßige Feedbackgespräche in der Probezeit",
+        "Teambuilding-Aktivitäten für neue Mitarbeitende",
+        "Digitale Onboarding-Plattform mit allen wichtigen Informationen"
+      ]
+    }
+  ]
+}

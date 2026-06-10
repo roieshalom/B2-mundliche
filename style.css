@@ -1,0 +1,320 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --border: #e0e2e7;
+  --primary: #2c5f8a;
+  --primary-hover: #1e4468;
+  --accent: #e8f0f8;
+  --text: #1a1d23;
+  --muted: #6b7280;
+  --badge-2: #2c5f8a;
+  --badge-3: #5a3e8a;
+  --card-a: #eef4fb;
+  --card-b: #f0ebfb;
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* Teil selector cards */
+.teil-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 540px) {
+  .teil-cards { grid-template-columns: 1fr; }
+}
+
+.teil-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.25rem 1.4rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.teil-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.teil-card.active {
+  border-color: var(--primary);
+  background: var(--accent);
+}
+
+.teil-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+.teil-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.teil-desc {
+  font-size: 0.83rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+/* Generate button */
+.generate-btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.generate-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+/* Result */
+.result {
+  margin-top: 2.5rem;
+}
+
+.result.hidden {
+  display: none;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.result-badge.teil2 { background: var(--badge-2); }
+.result-badge.teil3 { background: var(--badge-3); }
+
+.result-thema {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Cards area */
+.cards-area {
+  display: grid;
+  gap: 1rem;
+}
+
+.cards-area.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 620px) {
+  .cards-area.two-col { grid-template-columns: 1fr; }
+}
+
+/* Loading */
+.loading {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.loading.hidden { display: none; }
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Individual card */
+.aufgabe-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.5rem;
+  border-top: 4px solid var(--primary);
+}
+
+.aufgabe-card.karte-a { border-top-color: #2c5f8a; background: var(--card-a); }
+.aufgabe-card.karte-b { border-top-color: #5a3e8a; background: var(--card-b); }
+.aufgabe-card.teil3-card { border-top-color: #5a3e8a; }
+
+.card-rolle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.card-situation {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.card-punkte-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.card-punkte {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.card-punkte li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 1.1rem;
+  position: relative;
+  color: var(--text);
+}
+
+.card-punkte li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.karte-b .card-punkte li::before {
+  color: #5a3e8a;
+}
+
+/* Teil 3 specific */
+.aufgabe-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin: 1rem 0 0.4rem;
+}
+
+.aufgabe-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.impulse-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.impulse-list li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 1.4rem;
+  position: relative;
+  color: var(--text);
+}
+
+.impulse-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0.3rem;
+  color: #5a3e8a;
+  font-size: 1.1rem;
+}

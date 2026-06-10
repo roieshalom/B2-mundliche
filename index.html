@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B2 Mündliche Prüfung – Übung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>B2 Mündliche Prüfung</h1>
+      <p class="subtitle">Zufällige Aufgaben für die Prüfungsvorbereitung</p>
+    </header>
+
+    <section class="selector">
+      <div class="teil-cards">
+        <button class="teil-card" data-teil="teil2">
+          <span class="teil-label">Teil 2</span>
+          <span class="teil-title">Mit Kolleginnen und Kollegen sprechen</span>
+          <span class="teil-desc">3 Min. Vorbereitung · ca. 6 Min. Gespräch</span>
+        </button>
+        <button class="teil-card" data-teil="teil3">
+          <span class="teil-label">Teil 3</span>
+          <span class="teil-title">Lösungswege diskutieren</span>
+          <span class="teil-desc">3 Min. Vorbereitung · ca. 5 Min. Diskussion</span>
+        </button>
+      </div>
+
+      <button class="generate-btn" id="generateBtn" disabled>
+        Aufgabe generieren
+      </button>
+    </section>
+
+    <section class="loading hidden" id="loading">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Aufgabe wird geladen…</p>
+    </section>
+
+    <section class="result hidden" id="result">
+      <div class="result-header">
+        <span class="result-badge" id="resultBadge"></span>
+        <h2 class="result-thema" id="resultThema"></h2>
+      </div>
+      <div class="cards-area" id="cardsArea"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
