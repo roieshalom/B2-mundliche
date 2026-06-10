@@ -1,5 +1,10 @@
 let data = null;
 let selectedTeil = null;
+let generateCount = parseInt(localStorage.getItem('generateCount') || '0', 10);
+
+function updateCountDisplay() {
+  document.getElementById('generateCount').textContent = generateCount;
+}
 
 async function loadData() {
   const res = await fetch('data.json');
@@ -85,6 +90,10 @@ function generate() {
       renderTeil3(item);
     }
 
+    generateCount++;
+    localStorage.setItem('generateCount', generateCount);
+    updateCountDisplay();
+
     loading.classList.add('hidden');
     result.classList.remove('hidden');
     result.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -105,4 +114,34 @@ document.querySelectorAll('.teil-card').forEach(card => {
 
 document.getElementById('generateBtn').addEventListener('click', generate);
 
+// Info panel
+const infoBtn = document.getElementById('infoBtn');
+const infoPanel = document.getElementById('infoPanel');
+
+infoBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  infoPanel.classList.toggle('hidden');
+  updateCountDisplay();
+});
+
+document.addEventListener('click', (e) => {
+  if (!infoPanel.contains(e.target)) {
+    infoPanel.classList.add('hidden');
+  }
+});
+
+// Feedback
+document.getElementById('feedbackSubmit').addEventListener('click', () => {
+  const text = document.getElementById('feedbackText').value.trim();
+  if (!text) return;
+  const url = 'https://github.com/roieshalom/B2-mundliche/issues/new?title='
+    + encodeURIComponent('Aufgaben-Vorschlag')
+    + '&body=' + encodeURIComponent(text)
+    + '&labels=vorschlag';
+  window.open(url, '_blank');
+  document.getElementById('feedbackText').value = '';
+  infoPanel.classList.add('hidden');
+});
+
 loadData();
+updateCountDisplay();
