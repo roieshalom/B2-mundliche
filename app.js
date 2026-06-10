@@ -1,6 +1,6 @@
 let data = null;
 let selectedTeil = null;
-let generateCount = parseInt(localStorage.getItem('generateCount') || '0', 10);
+let generateCount = parseInt(localStorage.getItem('generateCount') || '8', 10);
 let countTeil2 = parseInt(localStorage.getItem('countTeil2') || '0', 10);
 let countTeil3 = parseInt(localStorage.getItem('countTeil3') || '0', 10);
 
