@@ -21,14 +21,34 @@
         <button class="modal-close" id="infoPanelClose" aria-label="Schließen">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
-        <div class="info-row">
-          <span class="info-label">Aufgaben generiert</span>
-          <span class="info-count" id="generateCount">0</span>
-        </div>
-        <hr class="info-divider" />
+
         <p class="info-feedback-label">Aufgabe vorschlagen</p>
-        <textarea class="info-textarea" id="feedbackText" placeholder="Schreib hier deine Aufgabe oder deinen Vorschlag…" rows="5"></textarea>
+        <textarea class="info-textarea" id="feedbackText" placeholder="Schreib hier deine Aufgabe oder deinen Vorschlag…" rows="4"></textarea>
         <button class="info-submit" id="feedbackSubmit">Vorschlag senden</button>
+
+        <div class="stats-divider">
+          <span>Stats</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-value" id="statTotal">0</span>
+            <span class="stat-label">Gesamt</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statTeil2">0</span>
+            <span class="stat-label">Teil 2</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statTeil3">0</span>
+            <span class="stat-label">Teil 3</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statStreak">0</span>
+            <span class="stat-label">Tage in Folge</span>
+          </div>
+        </div>
+        <p class="stat-last" id="statLast"></p>
       </div>
     </div>
 
