@@ -40,46 +40,211 @@
     },
     {
       "id": 2,
-      "situation": "In Ihrem Büro ist das gesamte IT-System ausgefallen. Wichtige Kundendaten sind nicht zugänglich. Ein großes Meeting mit einem Kunden ist in zwei Stunden geplant.",
+      "situation": "Sie arbeiten in einer Catering-Firma und liefern Essen an Kindergärten. In letzter Zeit haben sich mehrere Kindergärten beschwert, dass nicht genug Obst und Gemüse angeboten wird.",
       "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
       "stichpunkte": [
-        { "thema": "IT-Ausfall", "fragen": "wen informieren? wie lösen?" },
-        { "thema": "Kunden-Meeting", "fragen": "verschieben? wie vorbereiten?" },
-        { "thema": "Kollegen", "fragen": "wie informieren? was können sie tun?" },
-        { "thema": "Prävention", "fragen": "wie zukünftig vermeiden?" }
+        { "thema": "Beschwerden der Kitas", "fragen": "wie reagieren?" },
+        { "thema": "Speiseplan", "fragen": "was sofort ändern? wie umsetzen?" },
+        { "thema": "Team in der Küche", "fragen": "wie informieren? wer macht was?" },
+        { "thema": "Langfristig", "fragen": "neue Lieferanten? Schulung für Köche?" }
       ]
     },
     {
       "id": 3,
-      "situation": "Ein wichtiger Kunde beschwert sich schriftlich über ein fehlerhaftes Produkt, das er vor zwei Wochen bestellt hat. Er droht damit, seinen Vertrag zu kündigen und die Presse zu informieren.",
+      "situation": "Eine Kollegin ist plötzlich für vier Wochen krankgeschrieben. Sie war für ein wichtiges Projekt zuständig, dessen Abgabetermin in zwei Wochen ist.",
       "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
       "stichpunkte": [
-        { "thema": "Sofortmaßnahme", "fragen": "Kunde kontaktieren? wie reagieren?" },
-        { "thema": "Fehler", "fragen": "wie entschädigen? Ersatz anbieten?" },
-        { "thema": "Presse", "fragen": "wie vorbeugen? was kommunizieren?" },
-        { "thema": "Intern", "fragen": "Qualitätskontrolle verbessern?" }
+        { "thema": "Projekt", "fragen": "wie weitermachen?" },
+        { "thema": "Aufgaben", "fragen": "wer übernimmt was?" },
+        { "thema": "Chef", "fragen": "wann informieren? was vorschlagen?" },
+        { "thema": "Langfristig", "fragen": "Vertretungsregelung? Notfallplan?" }
       ]
     },
     {
       "id": 4,
-      "situation": "Ein wichtiger Mitarbeiter in Ihrem Team ist plötzlich erkrankt und fällt für drei Wochen aus. Ein großes Projekt muss in zehn Tagen abgegeben werden.",
+      "situation": "Das gesamte IT-System ist seit heute Morgen ausgefallen. Kundinnen und Kunden warten am Telefon und können nicht bedient werden. Niemand weiß, wann das Problem behoben wird.",
       "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
       "stichpunkte": [
-        { "thema": "Aufgaben", "fragen": "wie verteilen? wer übernimmt was?" },
-        { "thema": "Deadline", "fragen": "verschieben? Auftraggeber informieren?" },
-        { "thema": "Unterstützung", "fragen": "externe Hilfe? andere Abteilungen?" },
-        { "thema": "Langfristig", "fragen": "wie Ausfälle besser planen?" }
+        { "thema": "Kunden", "fragen": "wie informieren? was anbieten?" },
+        { "thema": "Arbeit ohne System", "fragen": "was geht? was nicht?" },
+        { "thema": "IT-Abteilung", "fragen": "was fordern? bis wann?" },
+        { "thema": "Langfristig", "fragen": "Backup-System? Notfallplan?" }
       ]
     },
     {
       "id": 5,
-      "situation": "Der Veranstaltungsraum, den Ihr Unternehmen für eine wichtige Konferenz mit 80 Teilnehmenden gebucht hat, wurde versehentlich doppelt vergeben. Die Konferenz ist in drei Tagen.",
+      "situation": "Ein Stammkunde beschwert sich, dass die letzten drei Lieferungen unvollständig waren. Er droht damit, die Geschäftsbeziehung zu beenden.",
       "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
       "stichpunkte": [
-        { "thema": "Alternativer Raum", "fragen": "wo suchen? was ist verfügbar?" },
-        { "thema": "Teilnehmende", "fragen": "wie informieren? wann?" },
-        { "thema": "Online-Option", "fragen": "hybrid möglich? technische Mittel?" },
-        { "thema": "Verantwortung", "fragen": "wer trägt Kosten? Konsequenzen?" }
+        { "thema": "Kunde", "fragen": "wie kontaktieren? was anbieten?" },
+        { "thema": "Ursache", "fragen": "woher kommen die Fehler? wer prüft?" },
+        { "thema": "Lager und Versand", "fragen": "wer wird informiert?" },
+        { "thema": "Langfristig", "fragen": "Kontrollsystem? Schulung?" }
+      ]
+    },
+    {
+      "id": 6,
+      "situation": "Der gemeinsame Pausenraum ist in den letzten Wochen ständig schmutzig. Geschirr stapelt sich, der Kühlschrank stinkt. Mehrere Kolleginnen und Kollegen haben sich beschwert.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Aktuelle Lage", "fragen": "wer räumt jetzt auf?" },
+        { "thema": "Team", "fragen": "wie informieren? wie motivieren?" },
+        { "thema": "Regeln", "fragen": "welche? wer kontrolliert?" },
+        { "thema": "Langfristig", "fragen": "Putzplan? Reinigungsfirma?" }
+      ]
+    },
+    {
+      "id": 7,
+      "situation": "Nächste Woche fängt eine neue Kollegin in Ihrer Abteilung an. Sie hat keine Berufserfahrung in diesem Bereich. Ihr Chef bittet Sie, die Einarbeitung zu organisieren.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Erster Tag", "fragen": "was zeigen? wen vorstellen?" },
+        { "thema": "Aufgaben", "fragen": "womit beginnen? wer erklärt?" },
+        { "thema": "Material", "fragen": "Unterlagen? Zugänge? Arbeitsplatz?" },
+        { "thema": "Langfristig", "fragen": "Mentor? Feedback-Gespräche?" }
+      ]
+    },
+    {
+      "id": 8,
+      "situation": "Ihr Chef möchte ein Teamevent für 15 Personen organisieren. Das Budget beträgt 1.500 Euro. Sie und eine Kollegin sollen das Event planen.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Aktivität", "fragen": "was passt zum Team?" },
+        { "thema": "Ort und Zeit", "fragen": "wann? wo? wie lange?" },
+        { "thema": "Organisation", "fragen": "Buchung? Essen? Transport?" },
+        { "thema": "Kollegen", "fragen": "wie informieren? Wünsche abfragen?" }
+      ]
+    },
+    {
+      "id": 9,
+      "situation": "Die Geschäftsleitung hat angekündigt, dass die Energiekosten stark gestiegen sind. Alle Abteilungen sollen Vorschläge machen, wie im Büroalltag Energie gespart werden kann.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Sofort", "fragen": "welche einfachen Maßnahmen?" },
+        { "thema": "Geräte", "fragen": "Licht? Computer? Heizung?" },
+        { "thema": "Team", "fragen": "wie informieren? wie motivieren?" },
+        { "thema": "Langfristig", "fragen": "Investitionen? Schulungen?" }
+      ]
+    },
+    {
+      "id": 10,
+      "situation": "Eine wichtige Lieferung mit Material für die Produktion sollte gestern eintreffen, ist aber bis jetzt nicht angekommen. Die Produktion steht still.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Lieferant", "fragen": "wie kontaktieren? was fordern?" },
+        { "thema": "Produktion", "fragen": "was tun mit den Mitarbeitern?" },
+        { "thema": "Kunden", "fragen": "informieren? was sagen?" },
+        { "thema": "Langfristig", "fragen": "zweiter Lieferant? größeres Lager?" }
+      ]
+    },
+    {
+      "id": 11,
+      "situation": "Zwei Kolleginnen in Ihrer Abteilung streiten sich seit Wochen ständig. Die Stimmung im ganzen Team ist schlecht und die Arbeit leidet darunter.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Gespräch", "fragen": "mit wem? wann? wo?" },
+        { "thema": "Ursache", "fragen": "wie herausfinden?" },
+        { "thema": "Chef", "fragen": "informieren? wann?" },
+        { "thema": "Langfristig", "fragen": "Mediation? Teambuilding? Regeln?" }
+      ]
+    },
+    {
+      "id": 12,
+      "situation": "Ihre Abteilung zieht in zwei Wochen in ein neues Büro im selben Gebäude. Sie sollen den Umzug gemeinsam mit einer Kollegin organisieren.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Vorbereitung", "fragen": "was muss verpackt werden? wer macht was?" },
+        { "thema": "Tag des Umzugs", "fragen": "Zeit? Hilfe? Transport?" },
+        { "thema": "Kollegen", "fragen": "wie informieren? wer sitzt wo?" },
+        { "thema": "Langfristig", "fragen": "neue Ausstattung? Einrichtung?" }
+      ]
+    },
+    {
+      "id": 13,
+      "situation": "Ein Auszubildender in Ihrer Abteilung macht in letzter Zeit viele Fehler und wirkt unmotiviert. Sein Ausbilder hat Sie gebeten, mit ihm zu sprechen.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Gespräch", "fragen": "wann? wo? was sagen?" },
+        { "thema": "Ursache", "fragen": "private Probleme? Überforderung?" },
+        { "thema": "Unterstützung", "fragen": "wer hilft? wie?" },
+        { "thema": "Langfristig", "fragen": "Plan für die Ausbildung? Feedback-Termine?" }
+      ]
+    },
+    {
+      "id": 14,
+      "situation": "Die Geschäftsleitung möchte, dass alle Mitarbeitenden eine Schulung zum Thema Datenschutz absolvieren. Sie sind dafür verantwortlich, das zu organisieren.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Format", "fragen": "Präsenz? online? extern?" },
+        { "thema": "Termin", "fragen": "wann? wie lange?" },
+        { "thema": "Kollegen", "fragen": "wie informieren? wer nimmt teil?" },
+        { "thema": "Langfristig", "fragen": "regelmäßige Auffrischung?" }
+      ]
+    },
+    {
+      "id": 15,
+      "situation": "Ein wichtiger Kunde hat einen großen Auftrag erteilt, der in nur einer Woche fertig sein muss. Ihr Team ist eigentlich schon ausgelastet.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Auftrag", "fragen": "annehmen oder nicht?" },
+        { "thema": "Team", "fragen": "wer kann mehr arbeiten? Überstunden?" },
+        { "thema": "Andere Aufträge", "fragen": "verschieben? wen informieren?" },
+        { "thema": "Langfristig", "fragen": "mehr Personal? bessere Planung?" }
+      ]
+    },
+    {
+      "id": 16,
+      "situation": "Im Team gibt es immer wieder Streit um den Schichtplan. Mehrere Kolleginnen und Kollegen beschweren sich, dass sie zu oft die unbeliebten Wochenend- oder Spätschichten übernehmen müssen.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Aktueller Plan", "fragen": "was läuft schief?" },
+        { "thema": "Gespräch im Team", "fragen": "wer organisiert? was besprechen?" },
+        { "thema": "Neue Regeln", "fragen": "welche? wer entscheidet?" },
+        { "thema": "Langfristig", "fragen": "faire Verteilung? digitales System?" }
+      ]
+    },
+    {
+      "id": 17,
+      "situation": "Sie arbeiten in einem Pflegeheim. Angehörige beschweren sich, dass die Bewohner zu wenig Zeit mit dem Pflegepersonal verbringen und sich einsam fühlen.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Angehörige", "fragen": "wie reagieren? was sagen?" },
+        { "thema": "Personal", "fragen": "wie entlasten? Prioritäten?" },
+        { "thema": "Bewohner", "fragen": "wie aktivieren? Beschäftigung?" },
+        { "thema": "Langfristig", "fragen": "mehr Personal? ehrenamtliche Helfer?" }
+      ]
+    },
+    {
+      "id": 18,
+      "situation": "In Ihrer Werkstatt fehlen seit ein paar Wochen immer wieder Werkzeuge. Niemand weiß, wo sie geblieben sind. Die Arbeit wird dadurch behindert.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Aktuelle Lage", "fragen": "wie weiterarbeiten? was ersetzen?" },
+        { "thema": "Kollegen", "fragen": "wie ansprechen? wen fragen?" },
+        { "thema": "Lager", "fragen": "wer hat Zugang? Kontrolle?" },
+        { "thema": "Langfristig", "fragen": "Werkzeug-Ausleihsystem? Sicherheit?" }
+      ]
+    },
+    {
+      "id": 19,
+      "situation": "Wegen eines Bahnstreiks können viele Mitarbeitende nicht pünktlich zur Arbeit kommen. Mehrere Kundentermine stehen heute an.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Heute", "fragen": "wer ist da? wer kommt später?" },
+        { "thema": "Kunden", "fragen": "informieren? Termine verschieben?" },
+        { "thema": "Mitarbeitende ohne Auto", "fragen": "wie unterstützen?" },
+        { "thema": "Langfristig", "fragen": "Homeoffice? Fahrgemeinschaften?" }
+      ]
+    },
+    {
+      "id": 20,
+      "situation": "Ein Kollege hat sich gestern beim Arbeiten verletzt, weil eine Maschine nicht richtig gesichert war. Die Geschäftsleitung verlangt einen Bericht und Vorschläge zur Verbesserung.",
+      "aufgabe": "Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen reagieren.",
+      "stichpunkte": [
+        { "thema": "Vorfall", "fragen": "was genau passiert? wer war dabei?" },
+        { "thema": "Maschine", "fragen": "sofort reparieren? wer prüft?" },
+        { "thema": "Team", "fragen": "informieren? Schulung?" },
+        { "thema": "Langfristig", "fragen": "Sicherheitskonzept? regelmäßige Kontrollen?" }
       ]
     }
   ]
