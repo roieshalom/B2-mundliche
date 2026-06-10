@@ -60,9 +60,6 @@ header h1 {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 540px) {
-  .teil-cards { grid-template-columns: 1fr; }
-}
 
 .teil-card {
   display: flex;
