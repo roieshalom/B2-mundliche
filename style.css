@@ -54,25 +54,23 @@ header h1 {
 
 .info-btn {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 0.4rem;
+  right: 0.5rem;
   z-index: 100;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  background: none;
+  border: none;
   cursor: pointer;
   color: var(--muted);
-  padding: 0.4rem;
+  padding: 0.25rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.15s, background 0.15s;
+  transition: color 0.15s;
 }
 
 .info-btn:hover {
   color: var(--primary);
-  background: var(--accent);
 }
 
 /* Modal overlay */
