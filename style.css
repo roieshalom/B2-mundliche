@@ -377,6 +377,41 @@ header h1 {
 }
 
 
+/* Redemittel empty state */
+.redemittel {
+  margin-top: 3rem;
+  text-align: center;
+  opacity: 0.65;
+}
+
+.redemittel.hidden { display: none; }
+
+.redemittel-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+}
+
+.redemittel-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.redemittel-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 /* Result */
 .result {
   margin-top: 2.5rem;

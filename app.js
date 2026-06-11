@@ -1,4 +1,5 @@
 let data = null;
+let redemittel = [];
 let selectedTeil = null;
 let generateCount = parseInt(localStorage.getItem('generateCount') || '8', 10);
 let countTeil2 = parseInt(localStorage.getItem('countTeil2') || '0', 10);
@@ -20,6 +21,19 @@ function updateStatsDisplay() {
 async function loadData() {
   const res = await fetch('data.json');
   data = await res.json();
+}
+
+async function loadRedemittel() {
+  const res = await fetch('redemittel.json');
+  redemittel = await res.json();
+  showRandomRedemittel();
+}
+
+function showRandomRedemittel() {
+  if (!redemittel.length) return;
+  const item = redemittel[Math.floor(Math.random() * redemittel.length)];
+  document.getElementById('redemittelText').textContent = item.text;
+  document.getElementById('redemittelTag').textContent = item.kategorie;
 }
 
 function pickRandom(arr) {
@@ -82,6 +96,7 @@ function generate() {
   const loading = document.getElementById('loading');
 
   result.classList.add('hidden');
+  document.getElementById('redemittel').classList.add('hidden');
   loading.classList.remove('hidden');
   loading.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -122,8 +137,10 @@ document.querySelectorAll('.teil-card').forEach(card => {
     document.getElementById('generateBtn').disabled = false;
     document.getElementById('result').classList.add('hidden');
     document.getElementById('loading').classList.add('hidden');
+    document.getElementById('redemittel').classList.remove('hidden');
   });
 });
+
 
 document.getElementById('generateBtn').addEventListener('click', generate);
 
@@ -159,3 +176,4 @@ document.getElementById('feedbackSubmit').addEventListener('click', () => {
 });
 
 loadData();
+loadRedemittel();
