@@ -498,6 +498,55 @@ header h1 {
   font-variant-numeric: tabular-nums;
 }
 
+.vote-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.vote-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.vote-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.vote-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--accent);
+}
+
+.vote-btn.vote-down:hover {
+  color: #a32d2d;
+  border-color: #a32d2d;
+  background: #fceeee;
+}
+
+.vote-thanks {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  flex: 1;
+  text-align: center;
+}
+
 .aufgabe-card.karte-a { border-top-color: #2c5f8a; background: var(--card-a); }
 .aufgabe-card.karte-b { border-top-color: #5a3e8a; background: var(--card-b); }
 .aufgabe-card.teil3-card { border-top-color: #5a3e8a; }

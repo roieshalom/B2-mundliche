@@ -5,6 +5,45 @@ let generateCount = parseInt(localStorage.getItem('generateCount') || '8', 10);
 let countTeil2 = parseInt(localStorage.getItem('countTeil2') || '0', 10);
 let countTeil3 = parseInt(localStorage.getItem('countTeil3') || '0', 10);
 
+const VOTE_URL = 'https://script.google.com/macros/s/AKfycbzDGkjwO5b1qdRo45B3W3RocivBKXIlJt6Yz4MJHWhZgm0F6LhZ4Gh-tluFxXwvGy6z/exec';
+const VOTE_COOLDOWN_MS = 24 * 60 * 60 * 1000;
+
+function voteKey(teil, id) { return `vote-${teil}-${id}`; }
+
+function hasVotedRecently(teil, id) {
+  const ts = parseInt(localStorage.getItem(voteKey(teil, id)) || '0', 10);
+  return Date.now() - ts < VOTE_COOLDOWN_MS;
+}
+
+function renderVoteRow(teil, id) {
+  if (hasVotedRecently(teil, id)) {
+    return `<div class="vote-row"><span class="vote-thanks">Danke für dein Feedback!</span></div>`;
+  }
+  return `
+    <div class="vote-row" data-teil="${teil}" data-id="${id}">
+      <span class="vote-label">War diese Aufgabe gut?</span>
+      <button class="vote-btn vote-up" data-vote="up" aria-label="Daumen hoch">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h2c.55 0 1-.45 1-1v-9c0-.55-.45-1-1-1H2v11zm19.83-7.12c.11-.25.17-.52.17-.8V11c0-1.1-.9-2-2-2h-5.5l.92-4.65c.05-.22.02-.46-.08-.66-.23-.45-.52-.86-.88-1.22L14 2 7.59 8.41C7.21 8.79 7 9.3 7 9.83v7.84C7 18.95 8.05 20 9.34 20h8.11c.7 0 1.36-.37 1.72-.97l2.66-6.15z"/></svg>
+      </button>
+      <button class="vote-btn vote-down" data-vote="down" aria-label="Daumen runter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4h-2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h2V4zM2.17 11.12c-.11.25-.17.52-.17.8V13c0 1.1.9 2 2 2h5.5l-.92 4.65c-.05.22-.02.46.08.66.23.45.52.86.88 1.22L10 22l6.41-6.41c.38-.38.59-.89.59-1.42V6.34C17 5.05 15.95 4 14.66 4H6.55c-.7 0-1.36.37-1.72.97L2.17 11.12z"/></svg>
+      </button>
+    </div>
+  `;
+}
+
+function submitVote(teil, id, vote, row) {
+  if (hasVotedRecently(teil, id)) return;
+  localStorage.setItem(voteKey(teil, id), Date.now());
+  row.innerHTML = '<span class="vote-thanks">Danke für dein Feedback!</span>';
+
+  fetch(VOTE_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: JSON.stringify({ teil, aufgabeId: id, vote })
+  }).catch(() => {});
+}
+
 
 function updateStatsDisplay() {
   document.getElementById('statTotal').textContent = generateCount;
@@ -56,11 +95,13 @@ function renderTeil2(items) {
       <div class="t2-number">1</div>
       <p class="t2-text">${a.text}</p>
       <span class="serial-number">#${a.id}</span>
+      ${renderVoteRow('teil2', a.id)}
     </div>
     <div class="aufgabe-card karte-b">
       <div class="t2-number">2</div>
       <p class="t2-text">${b.text}</p>
       <span class="serial-number">#${b.id}</span>
+      ${renderVoteRow('teil2', b.id)}
     </div>
   `;
 }
@@ -85,6 +126,7 @@ function renderTeil3(item) {
         <li class="stich-offen">…?</li>
       </ul>
       <span class="serial-number">#${item.id}</span>
+      ${renderVoteRow('teil3', item.id)}
     </div>
   `;
 }
@@ -143,6 +185,14 @@ document.querySelectorAll('.teil-card').forEach(card => {
 
 
 document.getElementById('generateBtn').addEventListener('click', generate);
+
+document.getElementById('cardsArea').addEventListener('click', (e) => {
+  const btn = e.target.closest('.vote-btn');
+  if (!btn) return;
+  const row = btn.closest('.vote-row');
+  if (!row || !row.dataset.teil) return;
+  submitVote(row.dataset.teil, parseInt(row.dataset.id, 10), btn.dataset.vote, row);
+});
 
 // Info panel
 const infoBtn = document.getElementById('infoBtn');
