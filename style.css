@@ -240,6 +240,17 @@ header h1 {
   letter-spacing: 0.5px;
 }
 
+.stat-item-total {
+  background: linear-gradient(135deg, rgba(44, 95, 138, 0.08) 0%, rgba(44, 95, 138, 0.04) 100%) !important;
+  border: 1.5px solid var(--primary) !important;
+  box-shadow: 0 2px 8px rgba(44, 95, 138, 0.12);
+}
+
+.stat-item-total .stat-value {
+  color: var(--primary);
+  font-size: 1.85rem;
+}
+
 .stat-box-full {
   grid-column: 1 / -1;
 }
