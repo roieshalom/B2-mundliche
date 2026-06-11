@@ -8,10 +8,8 @@ let countTeil3 = parseInt(localStorage.getItem('countTeil3') || '0', 10);
 
 function updateStatsDisplay() {
   document.getElementById('statTotal').textContent = generateCount;
-  if (data) {
-    document.getElementById('statTeil2Count').textContent = data.teil2.length;
-    document.getElementById('statTeil3Count').textContent = data.teil3.length;
-  }
+  document.getElementById('statTeil2Count').textContent = countTeil2;
+  document.getElementById('statTeil3Count').textContent = countTeil3;
   const last = localStorage.getItem('lastPracticed');
   document.getElementById('statLast').textContent = last
     ? 'Zuletzt geübt: ' + new Date(last).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
