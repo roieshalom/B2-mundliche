@@ -51,10 +51,6 @@ function updateStatsDisplay() {
     document.getElementById('statTeil2Count').textContent = data.teil2.length;
     document.getElementById('statTeil3Count').textContent = data.teil3.length;
   }
-  const last = localStorage.getItem('lastPracticed');
-  document.getElementById('statLast').textContent = last
-    ? 'Zuletzt geübt: ' + new Date(last).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
-    : '';
 }
 
 async function loadData() {
