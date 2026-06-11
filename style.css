@@ -128,6 +128,13 @@ header h1 {
 
 .modal-close:hover { background: var(--border); color: var(--text); }
 
+.info-intro {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
 .info-feedback-label {
   font-size: 0.82rem;
   font-weight: 600;
