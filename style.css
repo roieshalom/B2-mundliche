@@ -241,14 +241,14 @@ header h1 {
 }
 
 .stat-item-total {
-  background: linear-gradient(135deg, rgba(44, 95, 138, 0.08) 0%, rgba(44, 95, 138, 0.04) 100%) !important;
-  border: 1.5px solid var(--primary) !important;
-  box-shadow: 0 2px 8px rgba(44, 95, 138, 0.12);
+  background: linear-gradient(135deg, rgba(232, 240, 248, 0.8) 0%, rgba(232, 240, 248, 0.6) 100%) !important;
+  border: 1px solid rgba(44, 95, 138, 0.2) !important;
+  box-shadow: none;
 }
 
 .stat-item-total .stat-value {
   color: var(--primary);
-  font-size: 1.85rem;
+  font-size: 1.8rem;
 }
 
 .stat-box-full {
