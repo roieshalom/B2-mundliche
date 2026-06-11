@@ -200,8 +200,36 @@ header h1 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-item {
+  background: linear-gradient(135deg, var(--accent) 0%, rgba(232, 240, 248, 0.5) 100%);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.stat-item .stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stat-item .stat-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .stat-box-full {
