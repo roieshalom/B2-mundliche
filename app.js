@@ -37,6 +37,8 @@ function submitVote(teil, id, vote, row) {
   localStorage.setItem(voteKey(teil, id), Date.now());
   row.innerHTML = '<span class="vote-thanks">Danke für dein Feedback!</span>';
 
+  if (window.clarity) window.clarity('event', `vote_${vote}_${teil}`);
+
   fetch(VOTE_URL, {
     method: 'POST',
     mode: 'no-cors',
